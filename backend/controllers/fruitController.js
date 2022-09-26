@@ -35,6 +35,6 @@ exports.updateFruit = async (req, res) => {
 
 exports.deleteFruit = async (req, res) => {
   const { id } = req.params;
-  await Fruit.findByIdAndDelete(id);
+  await Fruit.findOneAndDelete(id);
   res.redirect("/fruits");
 };

@@ -1,9 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
-const router = express.Router();
 const fruitController = require("./controllers/fruitController");
-const Fruit = require("./models/fruits-model");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
